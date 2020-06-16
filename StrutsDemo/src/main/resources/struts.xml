@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="false" />
+	<!-- upload max file size limit -->
+	<constant name="struts.multipart.maxSize" value="104857600" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<!-- Tiles Integration -->
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		<default-action-ref name="index" />
+		<global-results>
+			<result name="exception">exception.jsp</result>
+			<result name="runtime_exception">runtime_exception.jsp</result>
+			<result name="error">error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="exception"></exception-mapping>
+			<exception-mapping exception="java.lang.Error"
+				result="error"></exception-mapping>
+			<exception-mapping
+				exception="java.lang.RuntimeException" result="runtime_exception"></exception-mapping>
+		</global-exception-mappings>
+
+		<action name="index"
+			class="com.struts.demo.actions.EmployeeAction" method="employeeList">
+			<result name="success" type="tiles">welcome</result>
+		</action>
+
+
+		<action name="newEmployee"
+			class="com.struts.demo.actions.EmployeeAction" method="employeeForm">
+			<result name="success" type="tiles">newEmployee</result>
+		</action>
+
+
+		<action name="viewEmployee"
+			class="com.struts.demo.actions.EmployeeAction" method="viewEmployee">
+			<result name="success" type="tiles">viewEmployee</result>
+			<result name="error" type="tiles">welcome</result>
+		</action>
+
+		<action name="updateEmployee"
+			class="com.struts.demo.actions.EmployeeAction"
+			method="updateEmployee">
+			<result name="success" type="tiles">newEmployee</result>
+			<result name="error" type="tiles">welcome</result>
+		</action>
+
+		<action name="deleteEmployee"
+			class="com.struts.demo.actions.EmployeeAction"
+			method="deleteEmployee">
+			<result name="success" type="tiles">welcome</result>
+			<result name="error" type="tiles">welcome</result>
+		</action>
+
+		<action name="saveEmployee"
+			class="com.struts.demo.actions.EmployeeAction" method="saveEmployee">
+			<result name="success" type="tiles">newEmployee</result>
+			<result name="error" type="tiles">newEmployee</result>
+		</action>
+
+		<!-- Teacher Actions -->
+		<action name="teacherList"
+			class="com.struts.demo.actions.TeacherAction" method="teacherList">
+			<result name="success" type="tiles">teacherList</result>
+			<result name="error" type="tiles">teacherList</result>
+		</action>
+
+		<action name="teacherForm"
+			class="com.struts.demo.actions.TeacherAction" method="teacherForm">
+			<result name="success" type="tiles">newTeacher</result>
+		</action>
+
+
+		<!-- <action name="aboutUs"> <result type="tiles" name="success">aboutUs</result> 
+			</action> <action name="contactUs"> <result name="success" type="tiles">contactUs</result> 
+			</action> <action name="registerNgo"> <result name="success" type="tiles">registerNgo</result> 
+			</action> <action name="subscribe" class="com.vst.bean.SubscribeVO" method="subscribe"> 
+			<result name="success" type="tiles">contactUs</result> </action> -->
+	</package>
+</struts>

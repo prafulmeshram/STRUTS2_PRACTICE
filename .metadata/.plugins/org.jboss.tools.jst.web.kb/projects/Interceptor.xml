@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/annotations-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/catalina-storeconfig.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/ognl-3.1.26.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/struts2-dojo-plugin-2.3.37.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-struts2-dojo-plugin-2.3.37.jar/META-INF/struts-dojo-tags.tld" project="Interceptor"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/jaspic-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/servlet-api.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/commons-fileupload-1.4.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-es.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/commons-lang3-3.8.1.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-util.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/websocket-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-dbcp.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-jni.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/catalina.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/el-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/jsp-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/catalina-tribes.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-ko.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/javassist-3.20.0-GA.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/struts2-core-2.5.22.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-struts2-core-2.5.22.jar/META-INF/struts-tags.tld" project="Interceptor"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/catalina-ha.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/jasper.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-coyote.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-ja.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-websocket.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/commons-io-2.6.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-jdbc.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-ru.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-zh-CN.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-util-scan.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/freemarker-2.3.28.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/ecj-4.6.3.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-fr.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-api.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/tomcat-i18n-de.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/log4j-api-2.12.1.jar"/>
+  <path value="/home/jack/Documents/STRUTS_PRACTICE/Interceptor/WebContent/WEB-INF/lib/mysql-connector-java-6.0.6.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/jasper-el.jar"/>
+  <path value="/home/jack/sts-bundle/apache-tomcat-8.5.51/lib/catalina-ant.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="11" name="%0" offset="537" path="%1"/>
+   <linked-el length="11" name="%2" offset="504" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/Interceptor/WebContent/register.jsp" value="%1"/>
+  <alias path="urlFr" value="%0"/>
+  <alias path="urlEn" value="%2"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="/struts-tags">
+   <prefix>s</prefix>
+  </uri>
+  <uri value="/struts-dojo-tags">
+   <prefix>sx</prefix>
+  </uri>
+ </uris>
+</kb-project>

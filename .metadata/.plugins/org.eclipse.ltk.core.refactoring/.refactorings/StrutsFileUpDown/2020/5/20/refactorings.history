@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;StrutsFileUpDown/WebContent/multiUpload.jsp&apos; to &apos;multyUpload.jsp&apos;" description="Rename resource &apos;multiUpload.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/multiUpload.jsp" name="multyUpload.jsp" stamp="1589443504671" updateReferences="true"/>
+</session>

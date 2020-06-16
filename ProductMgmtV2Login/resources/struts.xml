@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+
+		<interceptors>
+			<interceptor name="loginInterceptor"
+				class="com.productmgmt.interceptors.LoginInterceptor" />
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="loginInterceptor" />
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="loginStack" />
+
+		<action name="productRegister"
+			class="com.productmgmt.actions.ProductRegistration">
+			<result name="success" type="redirect">welcome</result>
+			<result name="input">/register.jsp</result>
+		</action>
+
+		<action name="update"
+			class="com.productmgmt.actions.ProductRegistration" method="update">
+			<result name="success" type="redirect">welcome</result>
+			<result name="input">/update.jsp</result>
+		</action>
+
+
+		<action name="welcome"
+			class="com.productmgmt.actions.ProductRegistration"
+			method="welcomeAction">
+			<result name="success">/welcome.jsp</result>
+			<result name="input">/welcome.jsp</result>
+		</action>
+
+		<action name="registerForm"
+			class="com.productmgmt.actions.ProductRegistration"
+			method="renderForm">
+			<result name="input">/register.jsp</result>
+		</action>
+
+		<action name="updateProduct"
+			class="com.productmgmt.actions.ProductRegistration"
+			method="updateForm">
+			<result name="input">/update.jsp</result>
+		</action>
+
+		<action name="deleteProduct"
+			class="com.productmgmt.actions.ProductRegistration"
+			method="deleteProduct">
+			<result name="success" type="redirect">welcome</result>
+			<result name="error">/welcome.jsp</result>
+		</action>
+
+		<action name="login"
+			class="com.productmgmt.actions.LoginAction">
+			<result name="success">welcome</result>
+			<result name="input">index.jsp</result>
+		</action>
+
+		<action name="logout"
+			class="com.productmgmt.actions.LogoutAction">
+			<result name="input">index.jsp</result>
+		</action>
+
+
+	</package>
+</struts>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+         "-//Apache Struts//XWork Validator 1.0.3//EN"
+           "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+
+	<!-- NON FIELD VALIDATORS -->
+	<!-- <validator type="requiredstring"> <param name="fieldName">firstName</param> 
+		<message>Please Enter First Name</message> </validator> <validator type="requiredstring"> 
+		<param name="fieldName">lastName</param> <message>Please Enter Last Name</message> 
+		</validator> <validator type="required"> <param name="fieldName">age</param> 
+		<message>Please Enter Age</message> </validator> <validator type="int"> <param 
+		name="fieldName">age</param> <param name="min">18</param> <message>Please 
+		Enter Valid Age ; Age Cannot be less than ${min} </message> </validator> 
+		<validator type="requiredstring"> <param name="fieldName">gender</param> 
+		<message>Please Select Gender</message> </validator> <validator type="requiredstring"> 
+		<param name="fieldName">dob</param> <message>Please Enter DOB</message> </validator> 
+		<validator type="requiredstring"> <param name="fieldName">email</param> <message>Please 
+		Enter Email</message> </validator> <validator type="email"> <param name="fieldName">email</param> 
+		<message>Please Enter Valid Email</message> </validator> -->
+
+	<!-- FIELD VALIDATORS -->
+
+	<field name="firstName">
+		<field-validator type="requiredstring">
+			<message>Please Enter First Name</message>
+		</field-validator>
+	</field>
+	<field name="lastName">
+		<field-validator type="requiredstring">
+			<message>Please Enter Last Name</message>
+		</field-validator>
+	</field>
+	<field name="age">
+		<field-validator type="required">
+			<message>Please Enter Age</message>
+		</field-validator>
+	</field>
+	<field name="gender">
+		<field-validator type="requiredstring">
+			<message>Please Select Gender</message>
+		</field-validator>
+	</field>
+	<field name="dob">
+		<field-validator type="requiredstring">
+			<message>Please Enter DOB</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="requiredstring">
+			<message>Please Enter Email Id</message>
+		</field-validator>
+
+	<field-validator type="domainNameValidator">
+		<message>Please Enter Valid Doamin</message>
+	</field-validator>
+
+		<field-validator type="email">
+			<message>Please Enter Valid Email</message>
+		</field-validator>
+	</field>
+
+
+
+</validators>

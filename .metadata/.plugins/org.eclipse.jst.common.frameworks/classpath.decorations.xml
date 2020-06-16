@@ -1,0 +1,17 @@
+<classpath>
+  <container id="StrutsBasic!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/jack/Documents/STRUTS_PRACTICE/StrutsBasic/WebContent/WEB-INF/lib/struts2-core-2.5.22.jar">
+      <source-attachment-path>/home/jack/.m2/repository/org/apache/struts/struts2-core/2.5.22/struts2-core-2.5.22-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="SimpleRegistration!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/jack/Documents/STRUTS_PRACTICE/SimpleRegistration/WebContent/WEB-INF/lib/struts2-core-2.5.22.jar">
+      <source-attachment-path>/home/jack/.m2/repository/org/apache/struts/struts2-core/2.5.22/struts2-core-2.5.22-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="StrutsI18N!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/jack/Documents/STRUTS_PRACTICE/StrutsI18N/WebContent/WEB-INF/lib/struts2-core-2.5.22.jar">
+      <source-attachment-path>/home/jack/.m2/repository/org/apache/struts/struts2-core/2.5.22/struts2-core-2.5.22-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>
